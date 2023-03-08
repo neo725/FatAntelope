@@ -19,6 +19,11 @@ http://pages.cs.wisc.edu/~yuanwang/xdiff.html
 ## Try It
 A demonstration is setup here: [fatantelopetester-app.azurewebsites.net](https://fatantelopetester-app.azurewebsites.net/)
 
+## Adds Features
+1. Add app.json to setting always reset first nodes and remove after transformed node paths
+2. batch arguments write in single file named batch.txt, and then pass file name as argument
+3. All insert transform will locator in last always, remove locator by specific index or name
+
 ## Download
 
 Download the command-line tool in [releases](https://github.com/CameronWills/FatAntelope/releases)
@@ -28,7 +33,7 @@ Download the command-line tool in [releases](https://github.com/CameronWills/Fat
 Following build, you can use reference the FatAntelope.Core library directly or otherwise run the command-line tool
 
 ### Command Line Syntax
-
+## single input arguments
 ```
 FatAntelope source-file target-file output-file [transformed-file]
 
@@ -39,6 +44,17 @@ FatAntelope source-file target-file output-file [transformed-file]
    output-file : (output) file path to save the generated patch.  E.g. web.release.config
 
    transformed-file : (output, optional) file path to save the result from applying the output-file to the source-file.
+```
+## Batch input arguments
+```
+FatAntelope batch.txt
+```
+if have lot files need to proccessed, then user can write multiple arguments like below :
+```
+source-file target-file output-file [transformed-file]
+source-file target-file output-file [transformed-file]
+source-file target-file output-file [transformed-file]
+source-file target-file output-file [transformed-file]
 ```
 
 ## Example
