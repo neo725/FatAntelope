@@ -1,0 +1,10 @@
+{
+  "reset_node_path": [
+    "/configuration/dataCacheClients/dataCacheClient",
+    "/configuration/Registerkey",
+    "/configuration/system.web/sessionState"
+  ],
+  "remove_node_path": [
+    "/configuration/runtime/assemblyBinding"
+  ]
+}

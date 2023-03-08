@@ -1,0 +1,86 @@
+﻿./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/backend/GashPlusBackend/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Stage/backend/GashPlusBackend/Web.config /d/FatAntelope.1.0.0/config/Dev/backend/GashPlusBackend/Web.stage.config
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/backend/GashPlusBackend/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Prod/backend/GashPlusBackend/Web.config /d/FatAntelope.1.0.0/config/Dev/backend/GashPlusBackend/Web.prod.config
+
+
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashBackend/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Stage/gashapp/GashBackend/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashBackend/Web.stage.config
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashBackend/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Prod/gashapp/GashBackend/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashBackend/Web.prod.config
+
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashResources/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Stage/gashapp/GashResources/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashResources/Web.stage.config
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashResources/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Prod/gashapp/GashResources/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashResources/Web.prod.config
+
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashThirdAPI/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Stage/gashapp/GashThirdAPI/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashThirdAPI/Web.stage.config
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashThirdAPI/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Prod/gashapp/GashThirdAPI/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashThirdAPI/Web.prod.config
+
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWeb/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Stage/gashapp/GashWeb/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWeb/Web.stage.config
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWeb/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Prod/gashapp/GashWeb/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWeb/Web.prod.config
+
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWeb3rdAPI/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Stage/gashapp/GashWeb3rdAPI/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWeb3rdAPI/Web.stage.config
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWeb3rdAPI/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Prod/gashapp/GashWeb3rdAPI/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWeb3rdAPI/Web.prod.config
+
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWebAPI/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Stage/gashapp/GashWebAPI/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWebAPI/Web.stage.config
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWebAPI/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Prod/gashapp/GashWebAPI/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWebAPI/Web.prod.config
+
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWebH5/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Stage/gashapp/GashWebH5/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWebH5/Web.stage.config
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWebH5/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Prod/gashapp/GashWebH5/Web.config /d/FatAntelope.1.0.0/config/Dev/gashapp/GashWebH5/Web.prod.config
+
+
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/platform/GashBackendPlatform/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Stage/platform/GashBackendPlatform/Web.config /d/FatAntelope.1.0.0/config/Dev/platform/GashBackendPlatform/Web.stage.config
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/platform/GashBackendPlatform/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Prod/platform/GashBackendPlatform/Web.config /d/FatAntelope.1.0.0/config/Dev/platform/GashBackendPlatform/Web.prod.config
+
+
+
+
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/platform/GashPlateBackend/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Stage/platform/GashPlateBackend/Web.config /d/FatAntelope.1.0.0/config/Dev/platform/GashPlateBackend/Web.stage.config
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/platform/GashPlateBackend/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Prod/platform/GashPlateBackend/Web.config /d/FatAntelope.1.0.0/config/Dev/platform/GashPlateBackend/Web.prod.config
+
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/platform/GashPlatform/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Stage/platform/GashPlatform/Web.config /d/FatAntelope.1.0.0/config/Dev/platform/GashPlatform/Web.stage.config
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/platform/GashPlatform/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Prod/platform/GashPlatform/Web.config /d/FatAntelope.1.0.0/config/Dev/platform/GashPlatform/Web.prod.config
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashwallet/WebAPI/GashPlus40WebAPI/1.0.1/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Stage/gashwallet/WebAPI/GashPlus40WebAPI/GASHPLUS40/1.0.1/Web.config /d/FatAntelope.1.0.0/config/Dev/gashwallet/WebAPI/GashPlus40WebAPI/1.0.1/Web.stage.config
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashwallet/WebAPI/GashPlus40WebAPI/1.0.1/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Prod/gashwallet/WebAPI/GashPlus40WebAPI/GASHPLUS40/1.0.1/Web.config /d/FatAntelope.1.0.0/config/Dev/gashwallet/WebAPI/GashPlus40WebAPI/1.0.1/Web.prod.config
+
+
+
+
+
+
+
+
+
+
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashwallet/WebSite/Wallet/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Stage/gashwallet/WebSite/Wallet/Web.config /d/FatAntelope.1.0.0/config/Dev/gashwallet/WebSite/Wallet/Web.stage.config
+./FatAntelope.exe /d/FatAntelope.1.0.0/config/Dev/gashwallet/WebSite/Wallet/Web.config /d/Users/g-neochang/Documents/webconfig_backup/Prod/gashwallet/WebSite/Wallet/Web.config /d/FatAntelope.1.0.0/config/Dev/gashwallet/WebSite/Wallet/Web.prod.config

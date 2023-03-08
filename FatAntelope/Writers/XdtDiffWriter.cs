@@ -93,6 +93,11 @@ namespace FatAntelope.Writers
 
         #endregion
 
+        public XdtDiffWriter(AppSettingJson settings)
+        {
+            this.Settings = settings;
+        }
+
         /// <summary>
         /// Types of xdt transforms
         /// </summary>
@@ -126,6 +131,9 @@ namespace FatAntelope.Writers
         private const string XPathPredicate = "[({0}='{1}')]";
         private const string XPathIndexPredicate = "[{0}]";
 
+
+        public AppSettingJson Settings { get; set; }
+
         /// <summary>
         /// Write the diff / patch to the given file
         /// </summary>
@@ -141,11 +149,25 @@ namespace FatAntelope.Writers
         public XmlDocument GetDiff(XTree tree)
         {
             var doc = new XmlDocument();
+            var declaration = doc.CreateXmlDeclaration("1.0", "utf-8", null);
+            doc.AppendChild(declaration);
+
             var root = WriteElement(tree.Root.Matching, tree.Root, doc, string.Empty, 1);
 
             var attr = doc.CreateAttribute(XmlNamespace, XdtPrefix, XmlNamespaceUri);
             attr.Value = XdtNamespace;
             root.Attributes.Append(attr);
+
+            // remove //configuration/runtime/assemblyBinding
+            foreach (var removeNodePath in this.Settings.RemoveNodePath)
+            {
+                var removeNode =
+                    root.SelectSingleNode(removeNodePath);
+                if (removeNode != null && removeNode.ChildNodes.Count > 0)
+                {
+                    removeNode.RemoveAll();
+                }
+            }
 
             return doc;
         }
@@ -153,10 +175,23 @@ namespace FatAntelope.Writers
         /// <summary>
         /// Append the changed element to the new config transform. The given element may have been updated, inserted or deleted.
         /// </summary>
-        private XmlNode WriteElement(XNode oldElement, XNode newElement, XmlNode target, string path, int index)
+        private XmlNode WriteElement(XNode oldElement, XNode newElement, XmlNode target, string path, int index, bool forceInsert = false)
         {
             XmlNode element = null;
             var transform = GetTransformType(oldElement, newElement);
+
+            if (this.Settings.ResetNodePath.Contains(path))
+            {
+                if (oldElement?.Children.FirstOrDefault() != null)
+                {
+                    element = AddElement(target, oldElement);
+                    AddTransform(element, TransformType.RemoveAll.ToString());
+
+                    oldElement.XmlNode.RemoveAll();
+
+                    transform = TransformType.Insert;
+                }
+            }
 
             // Insert
             if (transform == TransformType.Insert)  
@@ -237,7 +272,10 @@ namespace FatAntelope.Writers
             {
                 var child = newElement.Elements[i];
                 if (child.Match == MatchType.Change)
-                    WriteElement(child.Matching, child, element, path, i);
+                {
+                    //WriteElement(child.Matching, child, element, path, i);
+                    WriteElement(child.Matching, child, element, path, i, forceInsert);
+                }
             }
 
             // Process 'inserted' and 'removed' child elements together in reverse
@@ -417,8 +455,10 @@ namespace FatAntelope.Writers
             var parent = element.Parent;
 
             // If only element, or last element, then use 'Insert'
-            if (parent == null || parent.Elements.Length < 2 || parent.Elements.Length == index + 1)
-                return TransformType.Insert.ToString();
+            // edited  by g-neochang
+            //if (parent == null || parent.Elements.Length < 2 || parent.Elements.Length == index + 1)
+            //    return TransformType.Insert.ToString();
+            return TransformType.Insert.ToString();
 
             // Can we insert before the next child element
             var next = parent.Elements[index + 1];
