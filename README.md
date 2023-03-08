@@ -24,10 +24,6 @@ A demonstration is setup here: [fatantelopetester-app.azurewebsites.net](https:/
 2. batch arguments write in single file named batch.txt, and then pass file name as argument
 3. All insert transform will locator in last always, remove locator by specific index or name
 
-## Download
-
-Download the command-line tool in [releases](https://github.com/CameronWills/FatAntelope/releases)
-
 ## Usage
 
 Following build, you can use reference the FatAntelope.Core library directly or otherwise run the command-line tool
